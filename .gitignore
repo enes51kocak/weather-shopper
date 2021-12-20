@@ -1,0 +1,6 @@
+/shelf/
+/.idea/
+/*.iml
+/target/
+/.DS_Store
+/reports/
