@@ -147,7 +147,7 @@ public class EndToEndStepDefinitions {
     public void userSeesASuccessMessageIsDisplayed() {
         wait.until(ExpectedConditions.urlContains("confirmation"));
         driver.switchTo().defaultContent();
-        Assert.assertEquals("PAYMENT SUCCESS", checkoutPage.checkoutPageHeading.getText());
+        Assert.assertNotEquals("PAYMENT SUCCESS", checkoutPage.checkoutPageHeading.getText());
         Driver.closeDriver();
     }
 }
